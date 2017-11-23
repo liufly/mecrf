@@ -2,7 +2,7 @@
 
 ```
 Python-2.7.12
-TensorFlow-1.2.0
+TensorFlow-1.2.1
 Numpy-1.13.1
 ```
 
