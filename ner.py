@@ -8,8 +8,6 @@ from data_utils_ner import *
 from mecrf_ner import *
 from itertools import chain
 from six.moves import range, reduce
-from gensim.models import word2vec
-import gensim
 
 import tensorflow as tf
 import numpy as np

@@ -5,23 +5,13 @@ import re
 import string
 import numpy as np
 
-from sklearn.model_selection import StratifiedKFold
 from itertools import chain
 
 def load_task(in_file, BIO=False, SBIEO=False):
-    '''Load the nth task. There are 20 tasks in total.
-
-    Returns a tuple containing the training and testing data for the task.
-    '''
     data = get_stories(in_file, BIO=BIO, SBIEO=SBIEO)
     return data
 
 def tokenize(sent):
-    '''Return the tokens of a sentence including punctuation.
-    >>> tokenize('Bob dropped the apple. Where is the apple?')
-    ['Bob', 'dropped', 'the', 'apple', '.', 'Where', 'is', 'the', 'apple', '?']
-    '''
-#     return [x.strip() for x in re.split('(\W+)?', sent) if x.strip()]
     return sent.split(' ')
 
 def convert2BIO(data):
