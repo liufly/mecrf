@@ -18,5 +18,6 @@ Memory-enhanced Conditional Random Fields},
   booktitle = {Proceedings of the Eighth International Joint Conference on Natural Language Processing (IJCNLP 2017)},
   year      = {2017},
   address   = {Taipei, Taiwan},
+  pages     = {555--565}
 }
 ```
